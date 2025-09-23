@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlaskGPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/style.css') }}">
 </head>
 <body>
     
-    <div id="chat-template" class="hidden odd:bg-slate-50 even:bg-slate-200 p-6">
+    <div id="chat-template" class=" hidden odd:bg-slate-50 even:bg-slate-200 p-6">
         <p class="message"></p>
     </div>
 
@@ -46,8 +47,7 @@
                             }</style>
                             <circle class="spinner_b2T7" cx="4" cy="12" r="3"/>
                             <circle class="spinner_b2T7 spinner_YRVV" cx="12" cy="12" r="3"/>
-                            <circle class="spinner_b2T7 spinner_c9oY" cx="20" cy="12" r="3"/>
-                        </svg>
+                            <circle class="spinner_b2T7 spinner_c9oY" cx="20" cy="12" r="3"/></svg>
                         <svg id="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" class="h-4 w-4 m-1 md:m-0" stroke-width="2">
                             <path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"
                                 fill="currentColor"></path>
@@ -58,6 +58,9 @@
         </form>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <script src="{{ url_for('static', filename='dist/js/script.js') }}"></script>
+
 </body>
 </html>
