@@ -1,5 +1,8 @@
 # FlaskGPT
 
+![Front Preview](assets/ui_preview.png)
+
+
 ## English
 
 ### Description
